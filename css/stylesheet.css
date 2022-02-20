@@ -5,6 +5,9 @@
     font-family: "Oswald", Helvetica, sans-serif;
 }
 
+body {
+ overflow-y: hidden;
+}
 body,
 html {
     margin: 0;
