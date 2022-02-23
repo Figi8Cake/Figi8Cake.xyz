@@ -42,12 +42,16 @@
       padding-bottom: 10px;
       border-radius: 70%;
     }
+
+    .amongus {
+        padding-left: 20px;
+    }
 </style>
 <html lang="en" dir="ltr">
      <link rel="shortcut icon" type="image/png" href="https://github.com/Figi8Cake/Figi8Cake.xyz/blob/main/pictures/favicon.png?raw=true">
   <head>
     <meta charset="utf-8">
-    <title>Figi8Cake</title>
+    <title>Sneak Peaks</title>
     <meta content="Figi8Cake" property="og:title">
     <meta content="Figi8Cake" property="og:site_name">
     <meta content="Hey! i'm Figi8Cake. I like to play Beatsaber and Gorilla Tag on VR. I like to code in Python as well. I'm currently learning html. I also like to upload to youtube from time to time!" property="og:description">
@@ -59,14 +63,35 @@
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
 
+  <script>
+      function myFunction() {
+      new Audio("pictures/among-us-vents-sound-effect-[AudioTrimmer.com].mp3").play();
+      setTimeout(function(){
+         location.href = '/';
+        },1000);
+    }
+  </script>
+
   <body>
     <div class="navbar">
-        <a href="/" class="active">Home</a>
+        <a href="/">Home</a>
         <a target="_self" href="https://figi8cake.xyz/socials" title="Socials">Socials</a>
         <a target="_self" href="https://figi8cake.xyz/aboutme" title="About me">About Me</a>
         <a target="_blank" href="https://github.com/Figi8Cake">Github</a>
         <a href = "mailto: figi8cake@astrocore.net">Send Email</a>
         <img src="pictures/image0 (2).jpg" style="width:70px;height: 70px;">
       </div>
+    <div class="amongus">
+        <button onclick="myFunction()"><img src="pictures/vent.png" width="70" height="65"></button>
+    </div>
+    <div class="main">
+        <h1>Coming Soon!</h1>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '894937415607779349', // AstroCore
+            channel: '894937416262107159' // #💬-general
+        })
+    </script>
   </body>
 </html>
