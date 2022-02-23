@@ -54,6 +54,7 @@ html {
     flex-direction: column;
 }
 
+.info p,
 .info ul,
 .socials ul {
     display: flex;
@@ -79,6 +80,7 @@ h1 {
                 0 20px 20px rgba(0,0,0,.25);
 }
 
+.info p,
 .info ul li {
     margin: 0 18px;
     letter-spacing: 1px;
@@ -139,6 +141,7 @@ h1 {
         height: 45px;
     }
 
+    .info p,
     .info ul li {
         margin: 0 9px;
         letter-spacing: 1px;
@@ -147,6 +150,7 @@ h1 {
 }
 
 @media (max-width: 460px) {
+    .info p,
     .info ul li {
         margin: 0 7px;
         letter-spacing: -0.1px;
@@ -159,7 +163,8 @@ h1 {
     h1 {
         font-size: 38px;
     }
-
+    
+    .info p,
     .info ul {
         flex-wrap: wrap;
         justify-content: center;
