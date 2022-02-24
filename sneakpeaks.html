@@ -13,6 +13,40 @@
 button :hover {
   cursor: pointer;
 }
+
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #c9c9c9; /* Light grey */
+  border-top: 16px solid #3d3d3d; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  padding-top: 140px;
+  color: white;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>
 <html lang="en" dir="ltr">
      <link rel="shortcut icon" type="image/png" href="https://github.com/Figi8Cake/Figi8Cake.xyz/blob/main/pictures/favicon.png?raw=true">
@@ -49,9 +83,8 @@ button :hover {
     <div class="amongus">
       <button onclick="myFunction()"><img id="amongus_image" src="pictures/opening_gif.gif" width="85" height="90"></button>
     </div>
-    <div class="main">
-        <h1>Coming Soon!</h1>
-    </div>
+    <div class="loader"></div>
+    <p>Please Wait . . .</p>
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '894937415607779349', // AstroCore
