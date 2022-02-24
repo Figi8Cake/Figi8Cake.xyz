@@ -33,6 +33,7 @@ button :hover {
   <script>
       function myFunction() {
       new Audio("pictures/among-us-vents-sound-effect-[AudioTrimmer.com].mp3").play();
+      document.getElementById("amongus_image").src="pictures/closing_gif.gif";
       setTimeout(function(){
          location.href = '/';
         },1000);
@@ -41,7 +42,7 @@ button :hover {
 
   <body>
     <div class="amongus">
-        <button onclick="myFunction()"><img src="pictures/vent.png" width="70" height="65"></button>
+      <button onclick="myFunction()"><img id="amongus_image" src="pictures/opening_gif.gif" width="85" height="90"></button>
     </div>
     <div class="main">
         <h1>Coming Soon!</h1>

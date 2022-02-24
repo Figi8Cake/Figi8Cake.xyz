@@ -60,6 +60,7 @@ button :hover {
 <script>
   function myFunction() {
   new Audio("pictures/among-us-vents-sound-effect-[AudioTrimmer.com].mp3").play();
+  document.getElementById("amongus_image").src="pictures/closing_gif.gif";
   setTimeout(function(){
      location.href = 'https://figi8cake.xyz/sneakpeaks';
     },1000);
@@ -119,7 +120,7 @@ button :hover {
       })
    </script>
     <div class="amongus">
-      <button onclick="myFunction()"><img src="pictures/amongus_vent.png" width="65" height="65"></button>
+      <button onclick="myFunction()"><img id="amongus_image" src="pictures/amongus_still.gif" width="85" height="90"></button>
     </div>
   </body>
 </html>
