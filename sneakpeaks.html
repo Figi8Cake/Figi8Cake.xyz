@@ -13,68 +13,6 @@
 button :hover {
   cursor: pointer;
 }
-
-
-/* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #ffffff00;
-  border-radius: 50%;
-  border-top: 16px solid #ffffff;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from {opacity:0 } 
-  to {opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{opacity:0 } 
-  to{opacity:1 }
-}
-
-@media (min-width: 1025px) {
-    #myDiv {
-      padding-bottom: 7.75%;
-    }
-  }
-
-#myDiv {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
-}
-
 </style>
 <html lang="en" dir="ltr">
      <link rel="shortcut icon" type="image/png" href="https://github.com/Figi8Cake/Figi8Cake.xyz/blob/main/pictures/favicon.png?raw=true">
@@ -100,51 +38,19 @@ button :hover {
          location.href = '/';
         },1000);
     }
-
-    document.addEventListener("DOMContentLoaded", function(){
-      setTimeout(function(){
-          if (Math.random() >= 0.9) {
-            location.href = 'https://www.youtube.com/watch?v=a3Z7zEc7AXQ';
-          }
-        },2000);
-    })
   </script>
 
   <body onload="myFunction()">
-    <link rel="preload" href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ"/>
     <div class="amongus">
       <button onclick="Button()"><img id="amongus_image" src="pictures/opening_gif.gif" width="85" height="90"></button>
     </div>
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
       <div class="main">
         <h1>Coming Soon...</h1>
         <div class="info">
           <ul>
-            <li>There was a 10% chance of you being rickrolled!</li>
+            <li>Coming Soon!</li>
           </ul>
-        </div>
-      </div>
     </div>
-    
-    <script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
-        <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-          new Crate({
-              server: '894937415607779349', // AstroCore
-              channel: '894937416262107159' // #💬-general
-          })
-    </script>
     </body>
     </html>
 </html>
