@@ -56,10 +56,12 @@
     width: 100%;
   }
   .navbar img {
-          display: none;
+    display: none;
+  }
+  .latestvideo {
+    margin-left: 0px;
   }
 }
-
       
 .side {
     text-align: center;
@@ -76,8 +78,15 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
+@media (min-width: 767px) {
+  .latestvideo {
+    margin-left: 150%;
+  }
+}
+
 .latestvideo {
-  margin-left: 150%;
+  margin-bottom: 20px;
   margin-top: 150px;
   -webkit-box-shadow: 10px 10px 61px 6px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 61px 6px rgba(0,0,0,0.75);
