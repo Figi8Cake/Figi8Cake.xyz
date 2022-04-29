@@ -51,6 +51,16 @@
     -10px 0 80px #9266b0,        /* outer left magenta */
     10px 0 80px #004464;         /* outer right cyan */
 }
+@media (max-width: 767px) {
+  .Sidebackground {
+    width: 100%;
+  }
+  .navbar img {
+          display: none;
+  }
+}
+
+      
 .side {
     text-align: center;
     width: 60%;
@@ -109,7 +119,9 @@ body, html {
         <div class="Sidebackground">
             <h1 class="title">Youtube Feed</h1>
             <div class="Side">
-                <iframe class="latestvideo" title="Latest Video" width="560" height="315" src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=Figi8cake" frameborder="0" allowfullscreen></iframe></div>
+                <iframe class="latestvideo" title="Latest Video" width="560" height="315" src="https://www.youtube.com/embed/0xDiBlYMZBA&t" frameborder="0" allowfullscreen></iframe></div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UCTXJysNmQXnNLLRVy7rVdmg" data-layout="full" data-theme="dark" data-count="default"></div>
             </div>
         </div>
     </div>
