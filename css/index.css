@@ -1,0 +1,130 @@
+  @import url("https://api.fontshare.com/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    --Color: #283c69;
+    --alt: #012;
+    padding: 100px;
+    margin: 0;
+    color: var(--alt);
+    font-family: Satoshi, Inter, sans-serif;
+    font-size: 36px;
+  }
+  
+  h1, h2, p {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    margin-bottom: 25px;
+    color: var(--Color);
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+  
+  * + h2 {
+    margin-top: 75px;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  header {
+    background: var(--Color);
+    padding: 100px;
+    color: white;
+    margin: -100px -100px 100px -100px;
+  }
+  
+  nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  nav img {
+    height: 80px;
+  }
+  
+  nav > *:last-child {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 50px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s;
+  }
+  
+  nav a:not(#logo):hover {
+    transform: scale(1.1) rotate(2.5deg);
+  }
+  
+  #title {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 0.9;
+    width: 100%;
+    max-width: 1000px;
+    margin: 75px auto 0 auto;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+  }
+  
+  #title span {
+    display: inline-block;
+    animation: 0.5s header both;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  @keyframes header {
+    100% {
+      opacity: 100;
+      transform: translateY(0);
+    }
+  }
+  @media screen and (max-width: 850px) {
+    body {
+      padding: 50px;
+    }
+    
+    header {
+      padding: 50px;
+      margin: -50px -50px 50px -50px;
+    }
+    
+    nav > *:last-child {
+      grid-gap: 25px;
+    }
+    
+    #title {
+      font-size: 48px;
+      margin-top: 25px;
+    }
+    
+    p {
+      font-size: 24px;
+    }
+    
+    grid {
+      grid-gap: 10px;
+    }
+  }
